@@ -1,116 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-        <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-FHNTP0588Q"></script>
-    <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'G-FHNTP0588Q');
-    </script>
-    
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1>
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/styles.css">
-    <link rel="icon" type="image/x-icon" href="static/gear.ico">
-    <title>jakefernhout.com</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #333;
+            color: white;
+            padding: 20px;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        a {
+            color: #007acc;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 10px;
+            background: #333;
+            color: white;
+        }
+    </style>
 </head>
-<body">
-
-    <div id="titleDiv">
-        <h2 align="center">Welcome to</h2>
-        <h1 align="center" id = "wavyTitle"></h1>
-        <h3 align="center"> A landing place for all of my projects, qualifications, and skills</h2>   
-        <br> 
-    </div>
-    <br>
-    <div class = "menu-container">
-        <div class="dropdown">
-            <button class="dropbtn">Projects</button>
-            <div class="dropdown-content">
-              <a href="ex3.html">Ex-Alta 3</a>
-              <a href="cfd.html">CFD</a>
-              <a href="debora.html">Balloon Mission</a>
-              <a href="tbd.html">Honda CB750</a>
-            </div>
-        </div>
+<body>
+    <header>
+        <h1>Welcome to My Portfolio</h1>
+        <p>Hi, I'm Justin, a Mechanical Engineering Student.</p>
+    </header>
     
-        <div class="dropdown">
-            <button class="dropbtn">Qualifications</button>
-            <div class="dropdown-content">
-              <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-FEM7QUAB8G">CSWA</a>
-              <a href="https://cv.virtualtester.com/qr/?b=SLDWRKS&i=C-2LSXEY7BM8">CSWP</a>
-              <a href="#">Amateur Radio License</a>
-              <a href="cert.html#whmis">WHMIS</a>
-              <a href="cert.html#grounddisturbance">Ground Disturbance</a>
-              <a href="cert.html#defensivedriving">Defensive Driving</a>
-              <a href="cert.html#trailering">Commercial Trailering</a>
-              <a href="cert.html#firesafety">Fire Safety</a>
-              <a href="cert.html#wildernesstraining">Wilderness Awareness</a>
-            </div>
-        </div>
+    <section class="about">
+        <h2>About Me</h2>
+        <p>I'm passionate about designing and analyzing mechanical systems. I have experience with CAD, simulations, and hands-on engineering projects.</p>
+    </section>
     
-        <div class="dropdown">
-            <button class="dropbtn">Experience</button>
-            <div class="dropdown-content">
-                <a href="ses.html">Space Engine Systems</a>
-                <a href="calian.html">Calian</a>
-                <a href="asat.html">AlbertaSat</a>
-                <a href="corrosionservice.html">Corrosion Service</a>
-                <a href="tbd.html">Taiwan</a>
-            </div>
-        </div>
-    </div>
-    <br>
-    <br>
-    <br>
-    <div align="center">
-        <h1>About</h1>
-        <div align = "center">
-            <img id = "circular-image" src="images/memontreal.png" alt="In Maintenance">
-        </div>
-    </div>
-
-    <div>
-        Hi! I'm Jake. I built this resufolio (resume/portfolio) as a way to teach myself a new skill as well as to showcase 
-        the projects I've been a part of and skills I'm developing in a way thats a little more exciting than a PDF. A little about me,
-        I am a mechanical engineering student at the University of Alberta set to graduate in the Spring of 2025. I am in a COOP program
-        and have had internships that served to practice the skills I devloped in class and gain new experiences. My interests lie in all things
-        space and design, as they inherently require creativity and ingenuity to be succesful. Throughout my experience I have been drawn to these
-        projects and the people who are apart of them.
-    </div>
-    <br>
-    <br>
-
-    <audio id = "jazz">
-        <source src="static/jazz.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>🚀 Designed a precision positioning system for an experimental setup.</li>
+            <li>⚙️ Worked on an optomechanical medical device for eye surgery.</li>
+            <li>🛠️ Mythbusting engineering analysis using simulations.</li>
+        </ul>
+    </section>
     
-    <button  id="playPause" class="jazzy">Jazz</button>
-
-
+    <section class="contact">
+        <h2>Contact</h2>
+        <p>Feel free to reach out!</p>
+        <p>Email: <a href="mailto:justin@example.com">justin@example.com</a></p>
+        <p>GitHub: <a href="https://github.com/yourgithub" target="_blank">github.com/yourgithub</a></p>
+    </section>
+    
     <footer>
-        <br>
-        Check out my other stuff
-        <br>
-        <a id = "linx", href="https://github.com/jakeferny">Github</a>
-        <br>
-        <a id = "linx", href="https://linkedin.com/in/jakefernhout">LinkedIn</a>
-        <br>
-        <a id="linx", href="mailto:jakeferny@gmail.com">Email</a>
+        <p>&copy; 2025 Justin | Hosted on GitHub Pages</p>
     </footer>
-
-    <a class="hidden-link", href="games.html">Games</a>
-
-    <script src="js/scripts.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
